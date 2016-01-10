@@ -21,18 +21,34 @@ This is empty on purpose! Your code to build the resume will go here.
  var education = {
 	"schools": [
 	{
+		"name": "Bellevue College",
+		"location": "Bellevue, Washington",
+		"degree": "Continuing Education",
+		"majors": "Technical Writing, Professional Editing, Chinese II, Korean 4",
+		"dates": "2013 - 2015",
+		"url": "http://example.com"
+	},
+	{
+		"name": "Seoul National University",
+		"location": "Seoul, South Korea",
+		"degree": "Continuing Education - Study Abroad",
+		"majors": "Korean Language Immersion Program",
+		"dates": "May - Aug 2013",
+		"url": "http://example.com"
+	},
+	{
 		"name": "Franklin W. Olin College of Engineering",
 		"location": "Needham, MA, US",
-		"degree": "B.S.",
-		"majors": "Mechanical Engineering",
-		"dates": "2013",
+		"degree": "B.S.in Mechanical Engineering",
+		"majors": "Mechanics, Mechanical Prototyping, Mechanics and Solids and Structures, Dynamics, Thermodynamics, Transport Phenomena, Mechanical Design, Failure Analysis of Materials, Material Science and Solid State Chemistry, Vector Calculus, Linear Algebra, Statistics, Differential Equations, Nonlinear Dynamics and Chaos, Microelectromechanical Systems, User Oriented Collaborative Design, Sustainable Design, Software Design, Software Engineering, Principles of Engineering, Modeling and Simulation of the Physical World, Modeling and Control of Spatially Distributed Systems, Senior Capstone, Foundations of Business and Entrepreneurship, Design Nature, Biology, Six Books that changed the World, Historical Science Fiction",
+		"dates": "2009 - 2013",
 		"url": "http://example.com"
 	},
 	{
 		"name": "Wellesley College",
 		"location": "Wellesley, MA, US",
 		"degree": "Arts Concentration - Fulfilled B.S. requirements",
-		"majors": "Creative Writing",
+		"majors": "Writing Historical Fiction, Writing Short Narrative",
 		"dates": "2013",
 		"url": "http://example.com"
 	},
@@ -40,42 +56,37 @@ This is empty on purpose! Your code to build the resume will go here.
 		"name": "National University of Singapore",
 		"location": "Singapore, Singapore",
 		"degree": "Study Abroad - Fulfilled B.S. requirements",
-		"majors": "Engineering, Chinese, Economics",
+		"majors": "Human Factors in Engineering, Chinese, Engineering Economy",
 		"dates": "2012",
-		"url": "http://example.com"
-	},
-	{
-		"name": "Bellevue College",
-		"location": "Bellevue, Washington",
-		"degree": "",
-		"majors": "Technical Writing, Professional Proofing, Chinese and Korean",
-		"dates": "2015",
-		"url": "http://example.com"
-	},
-	{
-		"name": "Seoul National University",
-		"location": "Seoul, South Korean",
-		"degree": "",
-		"majors": "Korean Language Immersion Program",
-		"dates": "2013",
 		"url": "http://example.com"
 	},
 	{
 		"name": "Univeristy of California, Berkely",
 		"location": "Berkely, California",
 		"degree": "Summer Semester",
-		"majors": "Creative arts",
-		"dates": "2010",
+		"majors": "Studio Art, African Hatian Dance",
+		"dates": "June - Aug 2010",
 		"url": "http://example.com"
 	}
 	],
 	"onlineCourses": [
 	{
-		"title": "Font End Web Development Nano-Degree",
+		"title": "Online: Font End Web Development Nano-Degree",
 		"school": "Udacity",
+		"dates": "Nov 2015 - July 2016",
+		"url": "http://example.com"
+	},
+	{
+		"title": "Online: Financial Analysis and Decision Making",
+		"school": "TsinghuaX - edx",
 		"dates": "2015",
 		"url": "http://example.com"
-
+	},
+	{
+		"title": "Online: Developing International Software",
+		"school": "Microsoft - edx",
+		"dates": "2015",
+		"url": "http://example.com"
 	}
 	]
 }
@@ -348,7 +359,12 @@ for (school in education.schools){
  
  for (onlineCourse in education.onlineCourses){
  	var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
- 	$(".education-entry:last").append(formattedOnlineTitle);
+ 	var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
+ 	var formattedTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
+ 	$(".education-entry:last").append(formattedTitleSchool);
+ 	var formattedOnlineDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+	$(".education-entry:last").append(formattedOnlineDate);
+ 	
  }
 
 }

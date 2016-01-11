@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #54bae3;
   line-height: 48px;
   display: inline;
 }
@@ -100,16 +100,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #54bae3;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #54bae3;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #54bae3;
 }
 
 .white-text {
@@ -158,7 +158,7 @@ ul {
 
 img {
   padding: 10px;
-  max-height: 200px;
+  max-height: 190px;
 }
 
 span {
@@ -167,6 +167,10 @@ span {
 
 #lets-connect {
   text-align: center;
+}
+
+.HTMLheaderRole {
+  color: white;
 }
 
 /* Media queries to handle various device widths */

@@ -14,8 +14,8 @@ This is empty on purpose! Your code to build the resume will go here.
     "location": "Redmond"
   },
   "WelcomeMessage" : "Welcome!",
-  "skills": ["Program Management", "Organized", "Creative", "Technical"],
-  "bioPic" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/01f/1af/0b3e92f.jpg"
+  "skills": ["Program Management", "User Interface Design", "Mechanical Engineering", "Creative Problem Solver", "Technical Writer" ],
+  "bioPic" : "images/headshot.png"
  }
 
  var education = {
@@ -115,6 +115,113 @@ This is empty on purpose! Your code to build the resume will go here.
  		"images": ["images/BoeingScope.png"]
  	},
  	{
+ 		"title": "Space Heater Redesign",
+ 		"dates": "April 2013",
+ 		"description": "Analyzed the sustainability of space heaters and redesigned their usability. Interviewed space heater users and built usability frameworks as well as did a life cycle analysis on space heaters. Worked on a team of three engineers. This project was for a Sustainable Design class.",
+ 		"url": "",
+ 		"images": ["images/heater1.png", "images/heater2.png"]
+ 	},
+ 	{
+ 		"title": "AutoShelf - Self Organizing Bookshelf",
+ 		"dates": "May 2012",
+ 		"description": "Designed, 3D modelled, prototyped, machined and build a three axis self-organizing bookshelf. Worked on a team of four engineering. I was the mechanical lead and did all of the 3D modelling, machining and building. This project was for a class called Principles of Engineering.",
+ 		"url": "",
+ 		//"images": ["images/AS1.png", "images/AS3.png", "images/AS5.jpg", "images/AS7.jpg", "images/AS9.png"]
+ 		"images": ["images/AS1.png", "images/AS3.png", "images/AS5.jpg", "images/AS7.jpg"]
+ 	},
+ 	{
+ 		"title": "Water Piano",
+ 		"dates": "March 2012",
+ 		"description": "Designed, 3D modelled and build a piano using test tubes filled with water, servo motors and a python program. Worked on a team with one other person for a class called Principles of Engineering.",
+ 		"url": "https://www.dropbox.com/s/y1efwvcv3uii12w/POE_LAB3_Mariah_Shane1.pdf?dl=0",
+ 		"images": ["images/piano2.png", "images/piano3.png", "images/piano4.png"]
+ 	},
+ 	{
+ 		"title": "Old Fashion Mechanical Movie Projector",
+ 		"dates": "Dec 2011",
+ 		"description": "Built a mechanical film projector out of recycled materials on a team of three mechanical engineers. The projector was 3D modeled in Solidworks and prototyped using a mill, lathe, welding and 3D printing.",
+ 		"url": "https://www.dropbox.com/s/7ek50v0qmlftecz/FinalFinalReport.pdf?dl=0",
+ 		"images": ["images/projector1.jpg","images/projector2.png"]
+ 	},
+ 	{
+ 		"title": "Jigsaw Casing 3D Model",
+ 		"dates": "Nov 2011",
+ 		"description": "Took apart a hand saw and modelled the outer casing using surfaces in Solidworks. This was a project for a Mechanical Design class.",
+ 		"url": "https://www.dropbox.com/s/kuk84z1763u9or3/Jigsaw_Mariah_Report_1.pdf?dl=0",
+ 		//"images": ["images/saw1.png", "images/saw2.png", "images/saw3.png", "images/saw4.png", "images/saw5.png", "images/saw6.png"]
+ 		"images": ["images/saw1.png", "images/saw3.png", "images/saw6.png"]
+ 	},
+ 	{
+ 		"title": "Robotic Arm Design",
+ 		"dates": "Nov 2011",
+ 		"description": "Independently designed and 3D modeled a robotic arm. Used Solidworks for the 3D model and ran finite element analysis on the main components. This was my final project for Mechanical Design.",
+ 		"url": "https://www.dropbox.com/s/u3sdf0ryucrgrda/ROBOTIC_ARM_MARIAH_DUNN.pdf?dl=0",
+ 		//"images": ["images/roboticarm1.jpg", "images/roboticarm2.png", "images/roboticarm3.png", "images/roboticarm4.jpg", "images/roboticarm5.png", "images/roboticarm6.png", "images/roboticarm7.png"]
+ 		"images": ["images/roboticarm4.jpg", "images/roboticarm2.png",  "images/roboticarm5.png", "images/roboticarm6.png", "images/roboticarm7.png"]
+ 	},
+ 	{
+ 		"title": "Printer Battery Housing 3D Model",
+ 		"dates": "Oct 2011",
+ 		"description": "Took apart a printer and modelled the power supply box. This was a project for a Mechanical Prototyping class.",
+ 		"url": "https://www.dropbox.com/s/0yfsnd649dy7gm7/Mariah%20Dunn.pdf?dl=0",
+ 		"images": ["images/printer1.png", "images/printer2.png"]
+ 	},
+ 	{
+ 		"title": "Campo Del Cielo Iron Nickel Meteorite Research",
+ 		"dates": "March 2010 - May 2011",
+ 		"description": "Analyzed a Campo Del Cielo iron nickel meteorite on a team of 3 scientists. Examined the microstructure and the material properties using various types of microscopy, and hardness testers.",
+ 		"url": "",
+ 		//"images": ["images/meteorite1.png", "images/meteorite2.png", "images/meteorite3.jpg", "images/meteorite4.png", "images/meteorite5.jpg", "images/meteorite6.png"]
+ 		"images": ["images/meteorite1.png", "images/meteorite2.png", "images/meteorite5.jpg", "images/meteorite6.png"]
+ 	},
+ 	{
+ 		"title": "Animatronic Hermit Crab",
+ 		"dates": "April 2011",
+ 		"description": "Designed and built a robotic hermit crab. Used Solidworks for the 3D model and motion design. Prototyping was done with 3D printing and epoxy. Worked on a team with five engineers. One of the goals for this project was to 3D print the entire transmission in one piece.",
+ 		"url": "https://www.youtube.com/watch?v=J4XJ-ZQuR88",
+ 		//"images": ["images/hermit.png", "images/hermit1.png", "images/hermit2.png", "images/hermit3.png"]
+ 		"images": ["images/hermit.png", "images/hermit2.png", "images/hermit3.png"]
+ 	},
+ 	{
+ 		"title": "Animatronic Starfish Design",
+ 		"dates": "April 2011",
+ 		"description": "Designed and 3D modeled a starfish. Used Solidworks for the 3D model and motion design. Worked independently for a Mechanical Prototyping class.",
+ 		"url": "https://www.dropbox.com/s/48bm4f5u5rvrq5g/STARFISH_MARIAH.pdf?dl=0",
+ 		//"images": ["images/starfish.png", "images/starfish1.jpg", "images/starfish2.png", "images/starfish3.jpg", "images/starfish4.png", "images/starfish5.jpg", "images/starfish6.png", "images/starfish7.png", "images/starfish8.png"]
+ 		"images": ["images/starfish.png", "images/starfish2.png", "images/starfish4.png", "images/starfish7.png", "images/starfish8.png"]
+ 	},
+ 	{
+ 		"title": "Comparison of bridge trusses - Stress and Strain",
+ 		"dates": "April 2011",
+ 		"description": "Analyzed the stress and strain of different bridge trusses with different fixtures. Worked on a team of three engineers. I did the 3D model and Solidworks analysis. This was a project for a mechanical solids and structures class.",
+ 		"url": "https://www.dropbox.com/s/p1w96dnvxdg7fdf/CombinedFinalReport.pdf?dl=0",
+ 		"images": ["images/bridge1.png", "images/bridge2.png", "images/bridge3.png"]
+ 	},
+ 	{
+ 		"title": "Everpresent  - A locket designed for blind children and their parents",
+ 		"dates": "April 2011",
+ 		"description": "Studied care takers of blind children to learn about the problems they face. Designed a specialized locket that took into account senses other than site to allow parents and children to connect on a more personal level, addressed the problem that sometimes parents find it difficult to connect with their blind child. Worked on a team of four engineers. This class was for a user oriented centered design class.",
+ 		"url": "",
+ 		//"images": ["images/ep1.png", "images/ep2.png", "images/ep3.jpg", "images/ep4.jpg", "images/ep5.jpg"]
+ 		"images": ["images/ep1.png", "images/ep3.jpg", "images/ep4.jpg"]
+ 	},
+ 	{
+ 		"title": "Animatronic Flamboyant Squid Worm",
+ 		"dates": "March 2011",
+ 		"description": "Designed and built a flamboyant squid worm, a type of sea creature. Used Solidworks for the 3D model and motion design. Prototyping was done with water jet printing of aluminum. Worked on a team of six engineers.",
+ 		"url": "https://www.dropbox.com/s/60fxex9km05gk5f/Mariah%20Dunn%20FSW.pdf?dl=0",
+ 		//"images": ["images/fsw1.png", "images/fsw2.jpg", "images/fsw3.png", "images/fsw4.jpg", "images/fsw5.jpg", "images/fsw6.png"]
+ 		"images": ["images/fsw1.png", "images/fsw3.png", "images/fsw4.jpg"]
+ 	},
+ 	 	{
+ 		"title": "3D Olin Logo Design",
+ 		"dates": "Feb 2011",
+ 		"description": "Designed and 3D modeled a 3D Olin logo. Used Solidworks for the 3D model. Worked independently for a Mechanical Prototyping class. ",
+ 		"url": "https://www.dropbox.com/s/kv6f3ygxdinpy8g/OLIN-Mariah.pdf?dl=0",
+ 		"images": ["images/olin1.png", "images/olin2.png", "images/olin3.png"]
+ 	},
+ 	
+ 	{
  		"title": "Preserve - Sustainable Engineering Company",
  		"dates": "Dec 2010",
  		"description": "Worked with Preserve, a sustainable manufacturing company to investigate calcium carbonate fillers for use in recycled polypropylene. Worked with a team of six to determine the material properties of the combined substance. Specifically, I developed guidelines and tested wear and degradation of the material. This was part of a Material Science Failure Analysis Class.",
@@ -129,111 +236,13 @@ This is empty on purpose! Your code to build the resume will go here.
  		"images": ["images/glasses.jpg", "images/glasses1.jpg", "images/glasses4.png"]
  	},
  	{
- 		"title": "Old Fashion Mechanical Movie Projector",
- 		"dates": "Dec 2011",
- 		"description": "Built a mechanical film projector out of recycled materials on a team of three mechanical engineers. The projector was 3D modeled in Solidworks and prototyped using a mill, lathe, welding and 3D printing.",
- 		"url": "https://www.dropbox.com/s/7ek50v0qmlftecz/FinalFinalReport.pdf?dl=0",
- 		"images": ["images/projector1.jpg","images/projector2.png"]
- 	},
- 	{
- 		"title": "Robotic Arm Design",
- 		"dates": "Nov 2011",
- 		"description": "Independently designed and 3D modeled a robotic arm. Used Solidworks for the 3D model and ran finite element analysis on the main components. This was my final project for Mechanical Design.",
- 		"url": "https://www.dropbox.com/s/u3sdf0ryucrgrda/ROBOTIC_ARM_MARIAH_DUNN.pdf?dl=0",
- 		"images": ["images/roboticarm1.jpg", "images/roboticarm2.png", "images/roboticarm3.png", "images/roboticarm4.jpg", "images/roboticarm5.png", "images/roboticarm6.png", "images/roboticarm7.png"]
- 	},
- 	{
- 		"title": "Animatronic Hermit Crab",
- 		"dates": "April 2011",
- 		"description": "Designed and built a robotic hermit crab. Used Solidworks for the 3D model and motion design. Prototyping was done with 3D printing and epoxy. Worked on a team with five engineers. One of the goals for this project was to 3D print the entire transmission in one piece.",
- 		"url": "https://www.youtube.com/watch?v=J4XJ-ZQuR88",
- 		"images": ["images/hermit.png", "images/hermit1.png", "images/hermit2.png", "images/hermit3.png"]
- 	},
- 	{
- 		"title": "Animatronic Flamboyant Squid Worm",
- 		"dates": "March 2011",
- 		"description": "Designed and built a flamboyant squid worm, a type of sea creature. Used Solidworks for the 3D model and motion design. Prototyping was done with water jet printing of aluminum. Worked on a team of six engineers.",
- 		"url": "https://www.dropbox.com/s/60fxex9km05gk5f/Mariah%20Dunn%20FSW.pdf?dl=0",
- 		"images": ["images/fsw1.png", "images/fsw2.jpg", "images/fsw3.png", "images/fsw4.jpg", "images/fsw5.jpg", "images/fsw6.png"]
- 	},
- 	{
- 		"title": "Animatronic Starfish Design",
- 		"dates": "April 2011",
- 		"description": "Designed and 3D modeled a starfish. Used Solidworks for the 3D model and motion design. Worked independently for a Mechanical Prototyping class.",
- 		"url": "https://www.dropbox.com/s/48bm4f5u5rvrq5g/STARFISH_MARIAH.pdf?dl=0",
- 		"images": ["images/starfish.png", "images/starfish1.jpg", "images/starfish2.png", "images/starfish3.jpg", "images/starfish4.png", "images/starfish5.jpg", "images/starfish6.png", "images/starfish7.png", "images/starfish8.png"]
- 	},
- 	{
- 		"title": "3D Olin Logo Design",
- 		"dates": "Feb 2011",
- 		"description": "Designed and 3D modeled a 3D Olin logo. Used Solidworks for the 3D model. Worked independently for a Mechanical Prototyping class. ",
- 		"url": "https://www.dropbox.com/s/kv6f3ygxdinpy8g/OLIN-Mariah.pdf?dl=0",
- 		"images": ["images/olin1.png", "images/olin2.png", "images/olin3.png"]
- 	},
- 	{
- 		"title": "Printer Battery Housing 3D Model",
- 		"dates": "Feb 2011",
- 		"description": "Took apart a printer and modelled the power supply box. This was a project for a Mechanical Prototyping class.",
- 		"url": "https://www.dropbox.com/s/0yfsnd649dy7gm7/Mariah%20Dunn.pdf?dl=0",
- 		"images": ["images/printer1.png", "images/printer2.png"]
- 	},
- 	{
- 		"title": "Jigsaw Casing 3D Model",
- 		"dates": "Oct 2012",
- 		"description": "Took apart a hand saw and modelled the outer casing using surfaces in Solidworks. This was a project for a Mechanical Design class.",
- 		"url": "https://www.dropbox.com/s/kuk84z1763u9or3/Jigsaw_Mariah_Report_1.pdf?dl=0",
- 		"images": ["images/saw1.png", "images/saw2.png", "images/saw3.png", "images/saw4.png", "images/saw5.png", "images/saw6.png"]
- 	},
- 	{
- 		"title": "Comparison of bridge trusses - Stress and Strain",
- 		"dates": "April 2011",
- 		"description": "Analyzed the stress and strain of different bridge trusses with different fixtures. Worked on a team of three engineers. I did the 3D model and Solidworks analysis. This was a project for a mechanical solids and structures class.",
- 		"url": "https://www.dropbox.com/s/p1w96dnvxdg7fdf/CombinedFinalReport.pdf?dl=0",
- 		"images": ["images/bridge1.png", "images/bridge2.png", "images/bridge3.png"]
- 	},
- 	{
- 		"title": "Campo Del Cielo Iron Nickel Meteorite Research",
- 		"dates": "March 2010 - May 2011",
- 		"description": "Analyzed a Campo Del Cielo iron nickel meteorite on a team of 3 scientists. Examined the microstructure and the material properties using various types of microscopy, and hardness testers.",
- 		"url": "",
- 		"images": ["images/meteorite1.png", "images/meteorite2.png", "images/meteorite3.jpg", "images/meteorite4.png", "images/meteorite5.jpg", "images/meteorite6.png"]
- 	},
- 	 	{
  		"title": "MEMS Wankel Engine",
  		"dates": "April 2010",
  		"description": "Analyzed and 3D Modeled a microelectromechanical Wankel engine. Used Solidwalks for the 3D model and the motion design. This was part of a MEMS course.",
  		"url": "",
  		"images": ["images/wankel1.png", "images/wankel2.png"]
- 	},
- 	 	{
- 		"title": "Water Piano",
- 		"dates": "March 2012",
- 		"description": "Designed, 3D modelled and build a piano using test tubes filled with water, servo motors and a python program. Worked on a team with one other person for a class called Principles of Engineering.",
- 		"url": "https://www.dropbox.com/s/y1efwvcv3uii12w/POE_LAB3_Mariah_Shane1.pdf?dl=0",
- 		"images": ["images/piano2.png", "images/piano3.png", "images/piano4.png"]
- 	},
- 	{
- 		"title": "AutoShelf - Self Organizing Bookshelf",
- 		"dates": "May 2012",
- 		"description": "Designed, 3D modelled, prototyped, machined and build a three axis self-organizing bookshelf. Worked on a team of four engineering. I was the mechanical lead and did all of the 3D modelling, machining and building. This project was for a class called Principles of Engineering.",
- 		"url": "",
- 		"images": ["images/AS1.png", "images/AS3.png", "images/AS5.jpg", "images/AS7.jpg", "images/AS9.png"]
- 	},
- 	{
- 		"title": "Space Heater Redesign",
- 		"dates": "April 2013",
- 		"description": "Analyzed the sustainability of space heaters and redesigned their usability. Interviewed space heater users and built usability frameworks as well as did a life cycle analysis on space heaters. Worked on a team of three engineers. This project was for a Sustainable Design class.",
- 		"url": "",
- 		"images": ["images/heater1.png", "images/heater2.png"]
- 	},
-
- 	 	{
- 		"title": "Everpresent  - A locket designed for blind children and their parents",
- 		"dates": "April 2011",
- 		"description": "Studied care takers of blind children to learn about the problems they face. Designed a specialized locket that took into account senses other than site to allow parents and children to connect on a more personal level, addressed the problem that sometimes parents find it difficult to connect with their blind child. Worked on a team of four engineers. This class was for a user oriented centered design class.",
- 		"url": "",
- 		"images": ["images/ep1.png", "images/ep2.png", "images/ep3.jpg", "images/ep4.jpg", "images/ep5.jpg"]
  	}
+
  	]
  }
 
@@ -401,12 +410,13 @@ function displayLetsConnect(){
 	$("#lets-connect").append(formattedGithub);
 }
 
+$("#mapDiv").append(googleMap);
+
 displayBio();
 displayWork();
 displayEducation();
 displayProjects();
 displayLetsConnect();
-$("#mapDiv").append(googleMap);
 
 //Get a users click locations
 //$(document).click(function(loc){

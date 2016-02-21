@@ -29,7 +29,7 @@ This is empty on purpose! Your code to build the resume will go here.
   "bioPic" : "images/headshot.png"
  };
 
- function displayBio(){
+bio.display = function() {
 //Header
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -56,16 +56,24 @@ $("#header").append( formattedHeaderbioPic );
 	$("#topContacts").append(formattedMobile);
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);  
 	$("#topContacts").append(formattedEmail);
-	var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);  
-	$("#topContacts").append(formattedLinkedin);
+	//var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);  
+	//$("#topContacts").append(formattedLinkedin);
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);  
 	$("#topContacts").append(formattedGithub);
     //var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);  
 	//$("#topContacts").append(formattedLocation);
- }
 
+	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);  
+	$("#footerContacts").append(formattedMobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);  
+	$("#footerContacts").append(formattedEmail);
+	//var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);  
+	//$("#footerContacts").append(formattedLinkedin);
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);  
+	$("#footerContacts").append(formattedGithub);
+ }
 }
-displayBio();
+bio.display();
 
  var education = {
 	"schools": [
@@ -73,7 +81,7 @@ displayBio();
 		"name": "Bellevue College",
 		"location": "Bellevue, Washington",
 		"degree": "Continuing Education",
-		"majors": "Technical Writing, Professional Editing, Chinese II, Korean 4",
+		"majors": ["Technical Writing", "Professional Editing", "Chinese II, Korean 4"],
 		"dates": "2013 - 2015",
 		"url": "http://example.com"
 	},
@@ -81,15 +89,15 @@ displayBio();
 		"name": "Seoul National University",
 		"location": "Seoul, South Korea",
 		"degree": "Continuing Education - Study Abroad",
-		"majors": "Korean Language Immersion Program",
+		"majors": ["Korean Language Immersion Program"],
 		"dates": "May - Aug 2013",
 		"url": "http://example.com"
 	},
 	{
 		"name": "Franklin W. Olin College of Engineering",
 		"location": "Needham, MA, US",
-		"degree": "B.S.in Mechanical Engineering",
-		"majors": "Mechanics, Mechanical Prototyping, Mechanics and Solids and Structures, Dynamics, Thermodynamics, Transport Phenomena, Mechanical Design, Failure Analysis of Materials, Material Science and Solid State Chemistry, Vector Calculus, Linear Algebra, Statistics, Differential Equations, Nonlinear Dynamics and Chaos, Microelectromechanical Systems, User Oriented Collaborative Design, Sustainable Design, Software Design, Software Engineering, Principles of Engineering, Modeling and Simulation of the Physical World, Modeling and Control of Spatially Distributed Systems, Senior Capstone, Foundations of Business and Entrepreneurship, Design Nature, Biology, Six Books that changed the World, Historical Science Fiction",
+		"degree": "B.S.",
+		"majors": ["Mechanical Engineering"],
 		"dates": "2009 - 2013",
 		"url": "http://example.com"
 	},
@@ -97,7 +105,7 @@ displayBio();
 		"name": "Wellesley College",
 		"location": "Wellesley, MA, US",
 		"degree": "Arts Concentration - Fulfilled B.S. requirements",
-		"majors": "Writing Historical Fiction, Writing Short Narrative",
+		"majors": ["Writing Historical Fiction", "Writing Short Narrative"],
 		"dates": "2013",
 		"url": "http://example.com"
 	},
@@ -105,7 +113,7 @@ displayBio();
 		"name": "National University of Singapore",
 		"location": "Singapore, Singapore",
 		"degree": "Study Abroad - Fulfilled B.S. requirements",
-		"majors": "Human Factors in Engineering, Chinese, Engineering Economy",
+		"majors": ["Human Factors in Engineering", "Chinese", "Engineering Economy"],
 		"dates": "2012",
 		"url": "http://example.com"
 	},
@@ -113,7 +121,7 @@ displayBio();
 		"name": "Univeristy of California, Berkely",
 		"location": "Berkely, California",
 		"degree": "Summer Semester",
-		"majors": "Studio Art, African Hatian Dance",
+		"majors": ["Studio Art", "African Hatian Dance"],
 		"dates": "June - Aug 2010",
 		"url": "http://example.com"
 	}
@@ -122,24 +130,24 @@ displayBio();
 	{
 		"title": "Online: Font End Web Development Nano-Degree",
 		"school": "Udacity",
-		"dates": "Nov 2015 - July 2016",
+		"date": "Nov 2015 - July 2016",
 		"url": "http://example.com"
 	},
 	{
 		"title": "Online: Financial Analysis and Decision Making",
 		"school": "TsinghuaX - edx",
-		"dates": "2015",
+		"date": "2015",
 		"url": "http://example.com"
 	},
 	{
 		"title": "Online: Developing International Software",
 		"school": "Microsoft - edx",
-		"dates": "2015",
+		"date": "2015",
 		"url": "http://example.com"
 	}
 	]
 };
-function displayEducation(){
+education.display = function() {
 //for (job in work.jobs){
 for (var school in education.schools){
   if(education.schools.hasOwnProperty(school)){
@@ -152,7 +160,7 @@ for (var school in education.schools){
  	$(".education-entry:last").append(formattedSchoolLocation);
  	var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
  	$(".education-entry:last").append(formattedSchoolDates);
- 	var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+ 	var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors.join());
  	$(".education-entry:last").append(formattedSchoolMajor);
   }
  }
@@ -163,14 +171,14 @@ for (var school in education.schools){
  	var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
  	var formattedTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
  	$(".education-entry:last").append(formattedTitleSchool);
- 	var formattedOnlineDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+ 	var formattedOnlineDate = HTMLonlineDate.replace("%data%", education.onlineCourses[onlineCourse].date);
 	$(".education-entry:last").append(formattedOnlineDate);
   }
  }
 
 }
 
-displayEducation();
+education.display();
 
 var work = {
  	"jobs": [
@@ -213,7 +221,7 @@ var work = {
  	]
  };
 
-  function displayWork(){
+work.display = function(){
 //Adding job 
 for (var job in work.jobs){
   if(work.jobs.hasOwnProperty(job)){
@@ -233,7 +241,7 @@ for (var job in work.jobs){
 
 }
 
-displayWork();
+work.display();
 
  var projects = {
  	"projects": [
@@ -390,7 +398,7 @@ displayWork();
  	]
  };
 
- function displayProjects(){
+projects.display= function(){
 for (var project in projects.projects){
     if(projects.projects.hasOwnProperty(project)){
 		$("#projects").append(HTMLprojectStart);
@@ -412,24 +420,10 @@ for (var project in projects.projects){
 	}
 }
 
-displayProjects();
-
-
-
-function displayLetsConnect(){
-	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);  
-	$("#lets-connect").append(formattedMobile);
-    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);  
-	$("#lets-connect").append(formattedEmail);
-	var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);  
-	$("#lets-connect").append(formattedLinkedin);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);  
-	$("#lets-connect").append(formattedGithub);
-}
+projects.display();
 
 $("#mapDiv").append(googleMap);
 
-displayLetsConnect();
 
 //Get a users click locations
 //$(document).click(function(loc){
